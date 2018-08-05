@@ -1,0 +1,4 @@
+/*
+Boilerplate snipets in tile.js module.
+
+*/

@@ -1,0 +1,28 @@
+{
+  "name": "front-end-project",
+  "version": "1.0.0",
+  "description": "Sorry this repo is a little overdue. As I noted in the previous test repo-- I've been some issues with the billing on my Github acct and cannot create new repos the conventional way at this time; however, I've  I can still create new repos remotely  using the github.api. (https://api.github.com/). The task for this project are as described below.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "Stacey Whitmore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "next": "^4.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-markdown": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StaceyWhitmore/front-end-project-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StaceyWhitmore/front-end-project-project/issues"
+  },
+  "homepage": "https://github.com/StaceyWhitmore/front-end-project-project#readme"
+}
