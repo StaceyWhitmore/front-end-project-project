@@ -28,4 +28,4 @@ I'm coding this app as though it were an enterprise-level development project;
 Taking into consideration maintainability, sharability, and footprint.
 Initial load as well as overall page size is important.
 
-## Good Luck!
+## Get Cracking!
