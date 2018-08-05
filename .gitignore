@@ -71,3 +71,8 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Misc
+
+comps/Article.jpg
+comps/Tile.jpg
