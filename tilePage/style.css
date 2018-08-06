@@ -1,14 +1,22 @@
+
+
 * {
     box-sizing: border-box;
 }
-       /* The grid: Four equal columns that floats next to each other */
+
+
+
+
 
 body {
-  /*margin: 0;*/
 
+  margin: 100px; /*200px*/
   font-family: Arial;
 
 }
+
+
+
 
 .text-col {
   float: left;
@@ -35,8 +43,8 @@ body {
 }
 
 .row {
-    margin-left: 400px; /*New*/
-    margin-right: 400px; /*New*/
+    margin-left: 200px; /*New*/
+    margin-right: 200px; /*New*/
 }
 
 /* Clear floats AFTER the columns */
@@ -54,8 +62,8 @@ body {
     /*position: relative;*/ /*x-pos relative*/
     display: block;
 
-    margin-left: 400px; /*New*/
-    margin-right: 400px; /*New*/
+    margin-left: 200px; /*New*/
+    margin-right: 200px; /*New*/
 }
 
 
@@ -75,4 +83,94 @@ body {
 
     color: dark gray;
     font-size: 20px;
+}
+
+
+
+
+
+
+.indent-top {
+  grid-area: indent-top;
+
+
+}
+
+div .indent-top {
+  background-color: white;
+  color: gray;
+}
+
+.paragraph {
+  grid-area: paragraph;
+  position: relative;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  position: relative;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+  position: relative;
+}
+
+.sub-heading {
+    grid-area: sub-heading;
+  position: relative;
+}
+
+.video {
+  grid-area: video;
+  positon:relative;
+}
+
+div .video {
+ background-color: lightgray;
+ color: white;
+}
+
+.indent-bottom {
+  grid-area: indent-bottom;
+  positon:relative;
+}
+
+div .indent-bottom {
+  background-color: white;
+  color: gray;
+}
+
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+        "header  header  header header"
+        "paragraph paragraph paragraph indent-top"
+        "paragraph2 paragraph2 video video"
+        "paragraph3 paragraph3 paragraph3 indent-bottom"
+        "sub-heading  sub-heading  sub-heading indent-bottom";
+        background-color: white; /*#fff*/
+        color: #444; /*#444*/
+    }
+
+.box {
+  background-color: white; /*#444*/
+  color: gray; /*#fff*/
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+.header {
+  background-color: white;
 }

@@ -13,4 +13,4 @@ function selectImage(images) {
 
   // Show the container element (hidden with CSS)
   expandImage.parentElement.style.display = "block";
-} 
+}
