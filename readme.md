@@ -26,4 +26,3 @@ Code this app like an enterprise-level development project;
 Taking into consideration maintainability, sharability, and footprint.
 Initial load as well as overall page size is important.
 
-## Get Cracking!
