@@ -1,10 +1,20 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans");
+}
+
+html {
+  font-family: "Open Sans", "Bitstream Vera Serif", Verdana, sans-serif, serif;
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 100px;
-  font-family: Arial;
+  /*font-family: "Open Sans", Verdana, sans-serif;*/
 }
 
 .text-col {

@@ -1,7 +1,7 @@
 ### README.md
 
 Sorry this repo is a little overdue. As I noted in the previous test repo--
-I've been some issues with the billing on my Github
+I've had some issues with the billing on my Github
 acct and cannot create new repos the conventional way at this time; however,
 I've  I can still create new repos remotely  using the github.api.
 (https://api.github.com/). The task for this project are as described below.
@@ -25,4 +25,3 @@ The font used, open sans, is a google font that can be found here:
 Code this app like an enterprise-level development project;
 Taking into consideration maintainability, sharability, and footprint.
 Initial load as well as overall page size is important.
-
