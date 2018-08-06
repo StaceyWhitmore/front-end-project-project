@@ -8,11 +8,12 @@ body {
     margin: 20px;
     font-family: Arial;
 
+    /*NEW*/
     padding: 40;
-    border: '1px solid #DDD';
+    border: '3px solid #DDD';
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/* The grid: Ten equal columns that floats next to each other */
 .column {
     float: left;
     width: 10%;
@@ -26,12 +27,12 @@ body {
 }
 
 .column img:hover {
-    opacity: 1;
+    opacity: 1; /*Change opacity on hover*/
 }
 
-/* Clear floats after the columns */
+/* Clear floats After the columns */
 .row:after {
-    content: "";
+    content: "";     /*Set to empty*/
     display: table;
     clear: both;
 }
