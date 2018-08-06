@@ -7,7 +7,7 @@
 
 body {
 
-  margin: 100px; /*200px*/
+  margin: 100px; 
   font-family: Arial;
 
 }
@@ -19,9 +19,9 @@ body {
 
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/* The grid: Several equal columns that floats next to each other */
 .column {
-    float: right; /*left*/
+    float: right;
     width: 10%;
     padding: 5px;
 }
@@ -49,8 +49,6 @@ body {
 
 }
 
-/* The expanding image container (positioning is needed to position the AND the Text inside) */
-/*`display` attrinute was`none` --> now default = `block` so page loads with large image */
 
 .container {
     /*position: relative;*/ /*x-pos relative*/
@@ -78,10 +76,6 @@ body {
     color: dark gray;
     font-size: 20px;
 }
-
-
-
-
 
 
 .indent-top {
@@ -121,7 +115,7 @@ div .indent-top {
 }
 
 div .video {
- background-color: lightgray;
+ background-color: white;
  color: white;
 }
 
@@ -154,13 +148,13 @@ div .indent-bottom {
         "paragraph2 paragraph2 video video"
         "paragraph3 paragraph3 paragraph3 indent-bottom"
         "sub-heading  sub-heading  sub-heading indent-bottom";
-        background-color: white; /*#fff*/
-        color: #444; /*#444*/
+        background-color: white;
+        color: #444;
     }
 
 .box {
-  background-color: white; /*#444*/
-  color: gray; /*#fff*/
+  background-color: white;
+  color: gray;
   border-radius: 5px;
   padding: 50px;
   font-size: 150%;
