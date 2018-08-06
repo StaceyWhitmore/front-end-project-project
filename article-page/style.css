@@ -1,61 +1,56 @@
-
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 body {
-
   margin: 100px;
   font-family: Arial;
-
 }
 
 .text-col {
   float: left;
   /*top: 0px;*/
   /*right:0px;*/
-
 }
 
 /* The grid: Several equal columns that floats next to each other */
+
 .column {
-    float: right;
-    width: 10%;
-    padding: 5px;
+  float: right;
+  width: 10%;
+  padding: 5px;
 }
 
 /* Style the images inside the grid */
+
 .column {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .column img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .row {
-    margin-left: 200px;
-    margin-right: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Clear floats AFTER the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
 .container {
-    /*position: relative;*/ /*x-pos relative*/
-    display: block;
-
-    margin-left: 200px;
-    margin-right: 200px;
+  /*position: relative;*/
+  /*x-pos relative*/
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .video-col {
@@ -64,19 +59,21 @@ body {
 
 #image-caption {
   /*position: absolute;*/
-  color:gray;
+  color: gray;
   font-size: 15px;
   font-style: italic;
 }
 
 /* Expanding image text set to absolute bottom-left position*/
+
 #image-text {
-    position: absolute; /*image text position*/
-    /*display: block; NEW*/
-    /*bottom: 10px;*/
-    /*left:  10px;*/
-    color: dark gray;
-    font-size: 20px;
+  position: absolute;
+  /*image text position*/
+  /*display: block; NEW*/
+  /*bottom: 10px;*/
+  /*left:  10px;*/
+  color: dark gray;
+  font-size: 20px;
 }
 
 #video-text {
@@ -86,16 +83,13 @@ body {
 
 #video-caption {
   /*position: absolute;*/
-  color:gray;
+  color: gray;
   font-size: 15px;
   font-style: italic;
 }
 
-
 .indent-top {
   grid-area: indent-top;
-
-
 }
 
 /*
@@ -121,22 +115,20 @@ div .indent-top {
 }
 
 .sub-heading {
-    grid-area: sub-heading;
+  grid-area: sub-heading;
   position: relative;
 }
 
 .video {
   grid-area: video;
-  positon:relative;
+  positon: relative;
 }
 
-div .video {
-
-}
+div .video {}
 
 .indent-bottom {
   grid-area: indent-bottom;
-  positon:relative;
+  positon: relative;
 }
 
 /*
@@ -145,7 +137,6 @@ div .indent-bottom {
   color: gray;
 }
 */
-
 
 .header {
   grid-area: header;
@@ -156,18 +147,13 @@ div .indent-bottom {
 }
 
 .wrapper {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas:
-        "header  header  header header"
-        "paragraph paragraph paragraph indent-top"
-        "paragraph2 paragraph2 video video"
-        "paragraph3 paragraph3 paragraph3 indent-bottom"
-        "sub-heading  sub-heading  sub-heading indent-bottom";
-        background-color: white;
-        color: #444;
-    }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "header  header  header header" "paragraph paragraph paragraph indent-top" "paragraph2 paragraph2 video video" "paragraph3 paragraph3 paragraph3 indent-bottom" "sub-heading  sub-heading  sub-heading indent-bottom";
+  background-color: white;
+  color: #444;
+}
 
 .box {
   background-color: white;
@@ -176,6 +162,7 @@ div .indent-bottom {
   padding: 50px;
   font-size: 150%;
 }
+
 .header {
   background-color: white;
 }
