@@ -1,3 +1,7 @@
+/*This module can be ignored for now (along with about.js and article.js)
+as this project does not require react at this time.
+*/
+
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 
