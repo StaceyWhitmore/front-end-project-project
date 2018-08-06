@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+       /* The grid: Four equal columns that floats next to each other */
+
+body {
+  /*margin: 0;*/
+
+  font-family: Arial;
+
+
+}
+
+/*
+.body-container {
+  text-align: center;
+  margin: 20;
+  padding: 20;
+  border: '1px solid #DDD';
+}
+*/
+
+.text-col {
+  float: left;
+  top: 0px;
+  right:0px;
+
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: right; /*left*/
+    width: 10%;
+    padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row {
+    margin-left: 400px; /*New*/
+    margin-right: 400px; /*New*/
+}
+
+/* Clear floats AFTER the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* The expanding image container (positioning is needed to position the AND the Text inside) */
+/*`display` attrinute was`none` --> now default = `block` so page loads with large image */
+
+.container {
+    /*position: relative;*/ /*x-pos relative*/
+    display: block;
+
+    margin-left: 400px; /*New*/
+    margin-right: 400px; /*New*/
+}
+
+
+#image-caption {
+  position: absolute;
+  color:gray;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Expanding image text set to absolute bottom-left position*/
+#image-text {
+    position: absolute; /*image text position*/
+
+    /*bottom: 10px;*/
+    /*left:  10px;*/
+
+    color: dark gray;
+    font-size: 20px;
+}
