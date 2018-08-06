@@ -14,8 +14,8 @@ body {
 
 .text-col {
   float: left;
-  top: 0px;
-  right:0px;
+  /*top: 0px;*/
+  /*right:0px;*/
 
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 .row {
-    margin-left: 200px; /*New*/
-    margin-right: 200px; /*New*/
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /* Clear floats AFTER the columns */
@@ -54,13 +54,16 @@ body {
     /*position: relative;*/ /*x-pos relative*/
     display: block;
 
-    margin-left: 200px; /*New*/
-    margin-right: 200px; /*New*/
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
+.video-col {
+  float: left;
+}
 
 #image-caption {
-  position: absolute;
+  /*position: absolute;*/
   color:gray;
   font-size: 15px;
   font-style: italic;
@@ -69,12 +72,23 @@ body {
 /* Expanding image text set to absolute bottom-left position*/
 #image-text {
     position: absolute; /*image text position*/
-    display: block; /*NEW*/
+    /*display: block; NEW*/
     /*bottom: 10px;*/
     /*left:  10px;*/
-
     color: dark gray;
     font-size: 20px;
+}
+
+#video-text {
+  color: dark gray;
+  font-size: 20px;
+}
+
+#video-caption {
+  /*position: absolute;*/
+  color:gray;
+  font-size: 15px;
+  font-style: italic;
 }
 
 
@@ -84,10 +98,12 @@ body {
 
 }
 
+/*
 div .indent-top {
   background-color: white;
   color: gray;
 }
+*/
 
 .paragraph {
   grid-area: paragraph;
@@ -115,8 +131,7 @@ div .indent-top {
 }
 
 div .video {
- background-color: white;
- color: white;
+
 }
 
 .indent-bottom {
@@ -124,10 +139,12 @@ div .video {
   positon:relative;
 }
 
+/*
 div .indent-bottom {
   background-color: white;
   color: gray;
 }
+*/
 
 
 .header {
