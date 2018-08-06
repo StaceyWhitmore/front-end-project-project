@@ -7,7 +7,7 @@
 
 body {
 
-  margin: 100px; 
+  margin: 100px;
   font-family: Arial;
 
 }
@@ -69,7 +69,7 @@ body {
 /* Expanding image text set to absolute bottom-left position*/
 #image-text {
     position: absolute; /*image text position*/
-
+    display: block; /*NEW*/
     /*bottom: 10px;*/
     /*left:  10px;*/
 

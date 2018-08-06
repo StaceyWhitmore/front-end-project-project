@@ -1,16 +1,16 @@
 function selectImage(images) {
-  // Get the expanded image
+  // Get expanded image
   var expandImage = document.getElementById("expanded-image");
-  // Get the image text
+  // Get image text
   var imageText = document.getElementById("image-text");
-  // Get the image caption
+  // Get image caption
   var imageCaption = document.getElementById("image-caption")
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImage.src = images.src;
-  // Use the value of the alt attribute of the clickable image as TEXT INside the expanded image
+  // Use the value of the alt attribute of the clickable image as TEXT for the expanded image
   imageCaption.innerHTML = "Image Caption";
   imageText.innerHTML = images.alt;
 
-  // Show the container element (hidden with CSS)
+  // Show container element (hidden with CSS)
   expandImage.parentElement.style.display = "block";
 }
