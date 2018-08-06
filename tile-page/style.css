@@ -1,46 +1,62 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans");
+}
+
+html {
+  font-family: "Open Sans", "Bitstream Vera Serif", Verdana, sans-serif, serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 100px;
+
 }
 
 .wrapper {
     display: grid;
     grid-gap: 10px;
 		grid-template-columns: 33% 33% 33%;
-		background-color: #fff;
-		color: #444;
+
 	}
 
+  /*For all boxes*/
 	.box {
-		background-color: #444;
-		color: #fff;
+		color: #444;
 		border-radius: 5px;
 		padding: 20px;
-		font-size: 150%;
+		/*font-size: 150%;*/
 
 	}
+
+
+
 
 
 	.video-image {
+    position:relative;
+
 		grid-column: 1 ;
 		grid-row: 1;
-    font-size:med;
-    background-color: red;
+
 	}
 
 	.video-info {
+      position:relative;
 		grid-column: 2 / 4;
 		grid-row: 1;
-    font-style:italic;
+
 	}
 	.expanded-video {
 		grid-column: 1 / 4 ;
 		grid-row: 2 ;
-    background-color: orange;
 	}
 	.expanded-video-info {
 		grid-column: 1 /4;
 		grid-row: 3;
-    font-style:italic;
+
 	}

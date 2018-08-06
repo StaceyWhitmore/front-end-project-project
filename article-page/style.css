@@ -14,34 +14,33 @@ html {
 
 body {
   margin: 100px;
-  /*font-family: "Open Sans", Verdana, sans-serif;*/
 }
 
+/*Caption to left of thumbnails*/
 .text-col {
   float: left;
   /*top: 0px;*/
   /*right:0px;*/
 }
 
-/* The grid: Several equal columns that floats next to each other */
-
+/* The grid for thumnbnails: Several equal columns that floats next to each other */
 .column {
   float: right;
   width: 10%;
   padding: 5px;
 }
 
-/* Style the images inside the grid */
-
+/* Style the thumbnail images inside the grid */
 .column {
   opacity: 0.8;
   cursor: pointer;
 }
 
 .column img:hover {
-  opacity: 1;
+  opacity: 1; /*More opaque*/
 }
 
+/*thumbnail row */
 .row {
   margin-left: 50px;
   margin-right: 50px;
@@ -55,6 +54,7 @@ body {
   clear: both;
 }
 
+/*Container for expanded image*/
 .container {
   /*position: relative;*/
   /*x-pos relative*/
@@ -63,9 +63,11 @@ body {
   margin-right: 50px;
 }
 
+/*
 .video-col {
   float: left;
 }
+*/
 
 #image-caption {
   /*position: absolute;*/
@@ -97,6 +99,9 @@ body {
   font-size: 15px;
   font-style: italic;
 }
+
+
+/*LOWER REGION**CSS grid************************/
 
 .indent-top {
   grid-area: indent-top;
@@ -134,7 +139,6 @@ div .indent-top {
   positon: relative;
 }
 
-div .video {}
 
 .indent-bottom {
   grid-area: indent-bottom;
@@ -160,7 +164,12 @@ div .indent-bottom {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas: "header  header  header header" "paragraph paragraph paragraph indent-top" "paragraph2 paragraph2 video video" "paragraph3 paragraph3 paragraph3 indent-bottom" "sub-heading  sub-heading  sub-heading indent-bottom";
+  grid-template-areas:
+   "header  header  header header"
+   "paragraph paragraph paragraph indent-top"
+   "paragraph2 paragraph2 video video"
+   "paragraph3 paragraph3 paragraph3 indent-bottom"
+   "sub-heading  sub-heading  sub-heading indent-bottom";
   background-color: white;
   color: #444;
 }
