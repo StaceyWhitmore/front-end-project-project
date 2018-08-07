@@ -2,21 +2,26 @@
 as this project does not require react at this time.
 */
 
-import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
+import Layout from '../components/MyLayout.js';
+//import {withRouter} from 'next/router';
+//import Markdown from 'react-markdown';
+
+import Article from '../article-page/Article.js';
+import Link from 'next/link';
 
 function getPosts() {
   return [
-    { id: 'article' , title:'Wireframe for article.js page'},
-    { id: 'title' , title:'Wireframe for title.js page'}
-
+    { id: 'about', title:'about.js'},
+    { id: 'article' , title:'article.js'},
+    { id: 'title' , title:'Wireframe for title.js page'},
+    { id: 'hello-nextjs', title: 'Hello next.js'}
   ]
 }
 
 const PostLink = ({ post }) => (
   <li>
     <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-      <a className="box">{post.title}</a>
+      <a>{post.title}</a>
     </Link>
     <style jsx>{`
 
@@ -51,6 +56,9 @@ const PostLink = ({ post }) => (
   </li>
 )
 
+
+
+
 export default () => (
   <Layout>
     <h1>Front End React Project</h1>
@@ -59,6 +67,5 @@ export default () => (
         <PostLink key={post.id} post={post}/>
           ))}
     </ul>
-
   </Layout>
 )
