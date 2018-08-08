@@ -2,6 +2,7 @@ import Layout from '../components/MyLayout.js';
 import {withRouter} from 'next/router';
 import Markdown from 'react-markdown';
 import Test from './test.js';
+//import '../article-page/style.css';
 
 
 
@@ -35,7 +36,7 @@ Here's the content (this line was the content bc it is below the title)
    <Test />
 
 
-   
+
    <style jsx global>{`
      .markdown {
        font-family: 'Arial';
