@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import './index.css';
 //import App from './App';
-import Gallery from './ImageGallery/Gallery';
-//import img from './images/photo01.jpg';
+import Article from './article.js';
+import img from './images/photo01.jpg';
 import registerServiceWorker from './registerServiceWorker';
 
 

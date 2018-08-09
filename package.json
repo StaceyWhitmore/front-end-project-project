@@ -1,6 +1,6 @@
 {
   "name": "front-end-project",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sorry this repo is a little overdue. As I noted in the previous test repo-- I've been some issues with the billing on my Github acct and cannot create new repos the conventional way at this time; however, I've  I can still create new repos remotely  using the github.api. (https://api.github.com/). The task for this project are as described below.",
   "main": "server.js",
   "scripts": {
@@ -11,12 +11,14 @@
   "author": "Stacey Whitmore",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "next": "^4.2.3",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-markdown": "^3.4.1",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "express": "^4.16.3",
+    "image-loader": "0.0.1",
+    "next": "^4.2.3",
+    "react-markdown": "^3.4.1"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/StaceyWhitmore/front-end-project-project/issues"
   },
-  "homepage": "https://github.com/StaceyWhitmore/front-end-project-project#readme"
+  "homepage": "https://github.com/StaceyWhitmore/front-end-project-project#readme",
+  "devDependencies": {
+    "ajv": "^6.5.2",
+    "file-loader": "^1.1.11",
+    "url-loader": "^1.0.1"
+  }
 }
