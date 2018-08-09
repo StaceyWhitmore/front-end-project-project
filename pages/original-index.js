@@ -6,20 +6,6 @@ import Gallery from './ImageGallery/Gallery';
 //import img from './images/photo01.jpg';
 import registerServiceWorker from './registerServiceWorker';
 
-/*
-let urls = [
-  './images/photo01.jpg',
-  './images/photo02.jpg',
-  './images/photo03.jpg',
-  './images/photo04.jpg',
-  './images/photo05.jpg',
-  './images/photo06.jpg',
-  './images/photo07.jpg',
-  './images/photo08.jpg',
-  './images/photo09.jpg',
-  './images/photo10.jpg'
-];
-*/
 
 
 let urls = [

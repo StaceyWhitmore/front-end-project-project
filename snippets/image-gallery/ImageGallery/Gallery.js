@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import img from '../images/photo01.jpg';
+import './'
 
+/*Search the gallery Element for any <img> children.
+Using the HTMLImageElement.complete' */
 function imagesLoaded(parentNode) {
     const imgElements = [...parentNode.querySelectorAll("img")];
     for (let i = 0; i < imgElements.length; i += 1) {
@@ -11,7 +14,8 @@ function imagesLoaded(parentNode) {
       }
     }
 
-}
+} /*Because this function isn't dependent on anything else in the component(s)
+(i.e. no references to this), it is defined outside of the component classses.*/
 
 
 class Gallery extends Component {
@@ -21,7 +25,7 @@ class Gallery extends Component {
       loading: true
     };
   }
-   //was handleStateChange
+   //was handleStateChange--Takes element as arg. Returns T if all its img children have loaded.
   handleImageChange = () => {
     this.setState({
       loading:!imagesLoaded(this.galleryElement)
@@ -50,7 +54,7 @@ renderSpinner() {
       </div>
     );
   }//close renderImage()
-
+//pass f(x) to ref to get the gallery Element
 render() {
   return (
     <div
@@ -66,7 +70,10 @@ render() {
   );
   }
 
-} //close Gallery Comp
+} /*close Gallery Comp*************/
+
+
+
 Gallery.propTypes = {
   imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired
 }
