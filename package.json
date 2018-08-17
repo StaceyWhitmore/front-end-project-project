@@ -1,36 +1,18 @@
 {
-  "name": "front-end-project",
-  "version": "2.0.0",
-  "description": "Sorry this repo is a little overdue. As I noted in the previous test repo-- I've been some issues with the billing on my Github acct and cannot create new repos the conventional way at this time; however, I've  I can still create new repos remotely  using the github.api. (https://api.github.com/). The task for this project are as described below.",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
-  },
-  "keywords": [],
-  "author": "Stacey Whitmore",
-  "license": "ISC",
+  "name": "article-page",
+  "version": "1.1.2",
+  "private": true,
   "dependencies": {
+    "ajv": "^6.5.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "^1.1.4",
-    "express": "^4.16.3",
-    "image-loader": "0.0.1",
-    "next": "^4.2.3",
-    "react-markdown": "^3.4.1"
+    "react-scripts": "1.1.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StaceyWhitmore/front-end-project-project.git"
-  },
-  "bugs": {
-    "url": "https://github.com/StaceyWhitmore/front-end-project-project/issues"
-  },
-  "homepage": "https://github.com/StaceyWhitmore/front-end-project-project#readme",
-  "devDependencies": {
-    "ajv": "^6.5.2",
-    "file-loader": "^1.1.11",
-    "url-loader": "^1.0.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

@@ -1,3 +1,5 @@
+
+/* try jp?g also*/
 module.exports = {
   module: {
     rules: [
@@ -5,8 +7,8 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'url-loader',
-            options: {
+              loader: 'url-loader',
+              options: {
               limit: 8192,
               mime-type: 'image/jpg',
               fallback: 'responsive-loader'
