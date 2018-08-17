@@ -20,6 +20,7 @@ class SubHeading extends Component {
     return false;
 }
   render() {
+    //console.log("Rendering: SubHeading");
     var subHeadingStyle = {
       gridArea: 'subHeading',
       position: 'relative'
@@ -40,6 +41,7 @@ class SubHeading extends Component {
 }
 
 class Video extends Component {
+  //console.log("Rendering: Video");
   shouldComponentUpdate(nextProps, nextState) {
     return false;
 }
@@ -70,6 +72,7 @@ render() {
 
 
 class Wrapper extends Component {
+  //console.log("Rendering: Wrapper");
   shouldComponentUpdate(nextProps, nextState) {
     return false;
 }

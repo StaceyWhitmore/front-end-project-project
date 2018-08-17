@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Image from './Image.js';
 import Wrapper from './lowerLayout';
 import './style.css';
@@ -32,6 +32,7 @@ class Gallery extends React.Component {
   }
 
   render() {
+    //console.log("Rendering: Gallery");
     var columnStyle = {
       float: this.props.float,
       width: this.props.width,
@@ -82,8 +83,9 @@ class Gallery extends React.Component {
 }//close render()
 
 } //****************************************************close Gallery Component
-
+/*
 Gallery.propTypes = {
   imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired
 }
+*/
 export default Gallery
