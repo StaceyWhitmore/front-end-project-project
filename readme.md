@@ -1,5 +1,6 @@
 ### README.md
 
+### Important: This project has moved to a new repo (see article-page and tile-page).
 Sorry this repo is a little overdue. As I noted in the previous test repo--
 I've had some issues with the billing on my Github
 acct and cannot create new repos the conventional way at this time; however,
