@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+//import React, { PureComponent } from 'react';
 import './style.css';
 
-class Header extends React.Component {
+class Header extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+}
   render() {
     return(
       <div>
@@ -11,7 +15,10 @@ class Header extends React.Component {
   }
 }//close <Header />
 
-class SubHeading extends React.Component {
+class SubHeading extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+}
   render() {
     var subHeadingStyle = {
       gridArea: 'subHeading',
@@ -32,7 +39,10 @@ class SubHeading extends React.Component {
   }
 }
 
-class Video extends React.Component {
+class Video extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+}
 render() {
   var videoStyle = {
     gridArea: 'video',
@@ -59,8 +69,10 @@ render() {
 }//close <Video />
 
 
-class Wrapper extends React.Component {
-
+class Wrapper extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+}
   render() {
       var wrapperStyle = {
 
