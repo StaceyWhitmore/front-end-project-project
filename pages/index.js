@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 //import App from './App';
 import Article from './article.js';
 import img from './images/photo01.jpg';
-import registerServiceWorker from './registerServiceWorker';
+//import registerServiceWorker from './registerServiceWorker';
 
 
 
@@ -24,4 +24,4 @@ let urls = [
 
 
 ReactDOM.render(<Article imageUrls={urls} />, document.getElementById('root'));
-registerServiceWorker();
+//registerServiceWorker();
