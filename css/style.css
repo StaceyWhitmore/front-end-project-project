@@ -120,10 +120,7 @@ div .indent-top {
   positon:relative;
 }
 
-div .video {
- background-color: lightgray;
- color: white;
-}
+
 
 .indent-bottom {
   grid-area: indent-bottom;
