@@ -1,0 +1,75 @@
+/*
+.video {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+*/
+/***SHRINK*****/
+
+#expandingVideo:hover {
+  cursor: pointer;
+}
+
+#expandingVideo.shrink {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+
+  transform: scale(1) translate(1vw, 1vh);
+  -webkit-transform: scale(1) translate(1vw, 1vh);
+}
+/*
+@-webkit-keyframes
+shrink {
+    0% {position: absolute; transform: scale(2) translate(20vw, 20vh);}
+	100% {transform: scale(1) translate(1vw, 1vh);}
+}
+
+@keyframes
+shrink {
+    0% {position: absolute; transform: scale(2) translate(20vw, 20vh);}
+	100% {transform: scale(1) translate(1vw, 1vh);}
+}
+*/
+
+/***EXPAND*****/
+#expandingVideo.expand {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+  position: absolute;
+  transform: scale(2) translate(20vw, 20vh);
+  -webkit-transform: scale(2) translate(20vw, 20vh);
+}
+/*
+@-webkit-keyframes expand {
+	0% {transform: scale(1) translate(1vw, 1vh);}
+  100% {position: absolute; transform: scale(2) translate(20vw, 20vh);}
+}
+
+@keyframes expand {
+	0% {transform: scale(1) translate(1vw, 1vh);}
+  100% {position: absolute; transform: scale(2) translate(20vw, 20vh);}
+}
+*/
+
+
+
+/*
+@keyframes disappear {
+  0% {
+    color: gray;
+    opacity: .9;
+  }
+  100% {
+    color: white;
+    opacity: .1;
+  }
+}
+*/

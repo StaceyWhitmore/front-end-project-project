@@ -1,0 +1,60 @@
+
+
+body {
+  margin: 200px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.small-video {
+  grid-area: small-video;
+}
+
+/*Position relative to small-video*/
+.box.content {
+  grid-area: content;
+  position: relative;
+}
+
+/*Upper layout text*/
+div .content {
+  width:100%;
+}
+
+/*
+h2 {
+  width: 100%;
+  font-size: 60;
+}
+*/
+
+.heading {
+  margin-left: unset;
+  width: 100%;
+
+}
+.newsRelease {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.title {
+  margin-top: unset;
+  font-size: 40px;
+}
+
+.wrapper {
+		display: grid;
+    grid-gap: 5px; /*My original val set to 20px*/
+		grid-template-columns: 33.33% 33.33% 33.33%;
+		grid-template-areas:
+		"small-video content content";
+	}
+
+
+.box {
+  /*background-color: gray;*/
+  color: gray;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 100%;
+}

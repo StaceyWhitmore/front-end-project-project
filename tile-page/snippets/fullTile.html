@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      flex-direction: row;
+    }
+
+    .video {
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+
+    .paragraph {
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      font-size: 10px;
+      /*
+    -webkit-animation: disappear 1s;
+    webkit-animation-fill-mode: forwards;
+    */
+    }
+
+
+    @keyframes mymove {
+      0% {
+        transform: scale(1) translate(1vw, 1vh);
+      }
+      100% {
+        position: absolute;
+        transform: scale(2) translate(20vw, 20vh);
+      }
+    }
+
+
+    @keyframes disappear {
+      0% {
+        color: gray;
+        opacity: .9;
+      }
+      100% {
+        color: white;
+        opacity: .1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--   <button onclick="myFunction()">start animation</button> -->
+
+  <div class="flex-container">
+
+    <div id="video">
+      <iframe
+          id="ytplayer"
+          type="text/html"
+          width="280"
+          height="157"
+          src="https://www.youtube.com/embed/M7lc1UVf-VE"
+          frameborder="0"
+          allowfullscreen>
+     </iframe>
+     <h2> Video Title </h2>
+    </div>
+
+    <div id="paragraph">
+      <p class="paragraph"><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat
+        a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+  </div>  <!--close flex-container -->
+
+
+
+
+  <script>
+    function myFunction() {
+      document.getElementById("video").style.WebkitAnimation = "mymove 1s forwards";
+      document.getElementById("paragraph").style.WebkitAnimation = "disappear 1s forwards";
+    }
+  </script>
+</body>
+
+</html>

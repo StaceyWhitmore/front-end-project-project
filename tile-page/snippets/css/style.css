@@ -1,0 +1,92 @@
+body {
+  margin: 200px;
+}
+
+.small-video {
+  grid-area: small-video;
+}
+
+/*Position relative to small-video*/
+.box.content {
+  grid-area: content;
+  position: relative;
+}
+
+/*Upper layout text*/
+div .content {
+  width:100%;
+}
+
+h2 {
+  width: 100%;
+}
+
+/*Text color*/
+/*
+div .content {
+  color: darkgray;
+}
+*/
+
+/*class for img/video tag*/
+.top-video {
+  width: 100%;
+}
+
+.expanded-video {
+  grid-area: expanded-video;
+}
+/*
+div .expanded-video {
+
+  background-color:orange;
+}
+*/
+
+
+/*Position Relative to Video*/
+.expanded-content {
+  grid-area: expanded-content;
+  position: relative;
+}
+
+/*class for img/video tag*/
+.lower-video {
+  position: relative;
+  object-fit: cover;
+  top:0;
+  bottom:0;
+  width: 100%;
+  height:100%;
+  background-color:orange;
+  overflow:hidden;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  width: auto;
+  height: auto;
+
+}
+
+
+
+
+.wrapper {
+		display: grid;
+    grid-gap: 20px;
+		grid-template-columns: 33.33% 33.33% 33.33%;
+		grid-template-areas:
+		"small-video content content"
+    "expanded-video expanded-video expanded-video"
+    "expanded-content expanded-content expanded-content";
+	}
+
+
+.box {
+  /*background-color: gray;*/
+  color: gray;
+  border-radius: 10px;/*for rounded corners*/
+  padding: 30px;
+  font-size: 100%;
+}

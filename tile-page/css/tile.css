@@ -1,0 +1,22 @@
+.paragraph {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  font-size: 10px;
+  /*
+-webkit-animation: disappear 1s;
+webkit-animation-fill-mode: forwards;
+*/
+}
+
+/*
+@keyframes disappear {
+  0% {
+    color: gray;
+    opacity: .9;
+  }
+  100% {
+    color: white;
+    opacity: .1;
+  }
+}
+*/
