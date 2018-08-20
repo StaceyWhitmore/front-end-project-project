@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+  font-family: sans-serif;
+
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  fontSize: '12px'
+}
+
+/*Caption to left of thumbnails*/
+.text-col {
+  float: left;
+  /*top: 0px;*/
+  /*right:0px;*/
+}
+
+/* The grid for thumnbnails: Several equal columns that float next to each other */
+.column {
+  float: right;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Style the thumbnail images inside the grid */
+.column {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1; /*More opaque*/
+}
+
+/*thumbnail row */
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Clear floats AFTER the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Container for expanded image .... section..?*/
+.container {
+  /*position: relative;*/
+  /*x-pos relative*/
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box {
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+
+/*
+.video-col {
+  float: left;
+}
+*/
+
+#image-caption {
+  /*position: absolute;*/
+  color: gray;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Expanding image text set to absolute bottom-left position*/
+
+#image-text {
+  position: absolute;
+  /*image text position*/
+  /*display: block; NEW*/
+  /*bottom: 10px;*/
+  /*left:  10px;*/
+  color: dark gray;
+  font-size: 20px;
+}
+
+#video-text {
+  color: dark gray;
+  font-size: 20px;
+}
+
+#video-caption {
+  /*position: absolute;*/
+  color: gray;
+  font-size: 15px;
+  font-style: italic;
+}

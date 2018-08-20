@@ -1,0 +1,93 @@
+/*LOWER REGION**CSS grid************************/
+
+.indent-top {
+  grid-area: indent-top;
+}
+
+/*
+div .indent-top {
+  background-color: white;
+  color: gray;
+}
+*/
+p {
+  font-size: 15px;
+  /*padding: 0px;*/
+}
+
+.paragraph {
+  grid-area: paragraph;
+  position: relative;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  position: relative;
+  font-size: 15px;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+  position: relative;
+}
+
+/*var subHeadingStyle*/
+.sub-heading {
+  grid-area: sub-heading;
+  position: relative;
+}
+
+/*var videoStyle*/
+.video {
+  grid-area: video;
+  positon: relative;
+  padding: 5px;
+}
+
+
+.indent-bottom {
+  grid-area: indent-bottom;
+  positon: relative;
+}
+
+/*
+div .indent-bottom {
+  background-color: white;
+  color: gray;
+}
+*/
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*var wrapperStyle*/
+.wrapper {
+  display: grid;
+  grid-gap: 10px; /*was 10px*/
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+   "header  header  header header"
+   "paragraph paragraph paragraph indent-top"
+   "paragraph2 paragraph2 video video"
+   "paragraph3 paragraph3 paragraph3 indent-bottom"
+   "sub-heading  sub-heading  sub-heading indent-bottom";
+  background-color: white;
+  color: #444;
+}
+
+.box {
+  background-color: white;
+  color: gray;
+  border-radius: 2px;
+  padding: 2px; /*10px*/
+  font-size: 150%;
+}
+
+.header {
+  background-color: white;
+}
